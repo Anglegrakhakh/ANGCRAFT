@@ -1,0 +1,63 @@
+﻿<pu:WindowX x:Class="ANGCRAFT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ANGCRAFT"
+        mc:Ignorable="d"
+               xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        Title="ANGCRAFT v1.0.1" Height="747" Width="1287" Icon="apple-touch-icon.png"
+            ResizeMode="CanMinimize" WindowStyle="None">
+    <Grid Cursor="" Margin="0,0,-8,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="493*"/>
+            <ColumnDefinition Width="794*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="171630p0mkrq47e7z7khnx.jpg"/>
+        </Grid.Background>
+        <Button Content="Starting Minecraft" HorizontalAlignment="Left" VerticalAlignment="Top" Width="236" Grid.Column="3" Click="Btn1_Click" Margin="508,31,0,0" Height="55" FontSize="18" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="javaCombo" DisplayMemberPath="Id" HorizontalAlignment="Left" VerticalAlignment="Top" Width="230" Margin="10,231,0,0" Height="20" SelectionChanged="javaCombo_SelectionChanged" Opacity="0.2" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Grid.ColumnSpan="3" Foreground="#FF0078D7" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" OpacityMask="Black"/>
+        <Label Content="                 JAVA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,196,0,0" Height="35" Width="230" FontSize="18" FontWeight="Bold" AutomationProperties.IsOffscreenBehavior="Onscreen" TextOptions.TextFormattingMode="Display" Foreground="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="name"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Margin="10,159,0,0" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Grid.Column="2" Foreground="#FF127FCB" TextAlignment="Center" TextChanged="name_TextChanged">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderBrush" Value="#c1d0dc"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="                Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,119,0,0" Height="35" Width="230" FontSize="18" FontWeight="Bold" AutomationProperties.IsOffscreenBehavior="Onscreen" TextOptions.TextFormattingMode="Display" Foreground="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Grid.Column="2"/>
+
+        <TextBox x:Name="MB" Height="23" TextWrapping="Wrap" Width="230" Margin="10,91,0,0" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Grid.Column="2" Text="1024" FontWeight="Bold" CaretBrush="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Foreground="#FF127FCB" TextChanged="MB_TextChanged" VerticalAlignment="Top" HorizontalAlignment="Left" TextDecorations="{x:Null}" TextAlignment="Center" FontSize="14">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderBrush" Value="#c1d0dc"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="                 RAM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0" Height="35" Width="230" FontSize="18" FontWeight="Bold" AutomationProperties.IsOffscreenBehavior="Onscreen" TextOptions.TextFormattingMode="Display" Foreground="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Grid.Column="2"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="236" Grid.Column="3" Margin="508,481,0,0" Opacity="0.2" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" OpacityMask="Black" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Button x:Name="HOME" Content="HOME" HorizontalAlignment="Left" VerticalAlignment="Top" Width="236" Grid.Column="3" Margin="508,431,0,0" Height="45" FontSize="18" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="versionsList" DisplayMemberPath="Id" HorizontalAlignment="Left" VerticalAlignment="Top" Width="230" Margin="508,94,0,0" Height="30" SelectionChanged="javaCombo_SelectionChanged" Opacity="0.2" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="#FF0078D7" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" OpacityMask="Black" Grid.Column="3"/>
+
+
+    </Grid>
+</pu:WindowX>
